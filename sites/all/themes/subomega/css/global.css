@@ -187,6 +187,10 @@ word-spacing: 2px;
 float: right;
 font-size: 11px;
 }
+#block-block-4  {
+  letter-spacing: 1px;
+    font-weight: bold;
+}
 #block-system-main-menu--2,
 #block-block-2{
 float: left;
