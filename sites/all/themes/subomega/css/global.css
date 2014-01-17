@@ -98,6 +98,10 @@ width: 100%;
 top: 110px;
 position: absolute;
 }
+.admin-menu.not-front #zone-menu-wrapper{
+top:140px;
+}
+
 .menu li a:after {
   content: ":";
 padding-left: 6px;
