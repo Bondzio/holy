@@ -18,6 +18,12 @@
 html,body,#page{
   background-color: #000000;
 }
+h2 {
+  font-size: 18px;
+}
+p {
+  font-size: 14px;
+}
 #page > section {
   background-color: #000000;
   background-image: url("/sites/all/themes/subomega/images/bg.jpg");
@@ -118,6 +124,11 @@ padding-left: 6px;
     font-size: 18px;
   
   
+}
+.menu li a:hover,
+.menu li a:active, 
+.menu li a.active{
+  color: #06dbfb;
 }
 
 /*
