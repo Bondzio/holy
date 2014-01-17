@@ -53,6 +53,7 @@ width: 906px;
   border-radius: 5px;
   padding: 10px;
  width: 90%;
+ word-break: break-word;
 }
 #region-content #page-title{
 font-size: 18px;
@@ -76,17 +77,18 @@ a:link, a:visited {
 *
 * Main menu
 */
-#zone-menu {
+#block-system-main-menu {
 background: none repeat scroll 0 0 rgba(0,0,0, 0.8);
 margin-auto: 0 auto;
     line-height: 35px;
 }
-.front #zone-menu {
+.front #zone-menu #block-system-main-menu{
 background: none repeat scroll 0 0 rgba(0,0,0, 0.1);
 }
-.front #zone-menu-wrapper{
+.front #zone-menu-wrapper #block-system-main-menu{
+/*.front #zone-menu-wrapper{*/
 width: 100%;
-top: 500px;
+top: 467px;
 position: absolute;
 }
 #region-menu {
@@ -98,7 +100,7 @@ width: 100%;
 top: 110px;
 position: absolute;
 }
-.admin-menu.not-front #zone-menu-wrapper{
+.admin-menu.not-front:not(.page-participants) #zone-menu-wrapper{
 top:140px;
 }
 
