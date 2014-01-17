@@ -1,0 +1,305 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+*,p,li,a,b,span,div,.title.node_type{ 
+	font-family: "Alef Hebrew",“Helvetica Neue”,Helvetica,Arial,sans-serif ;
+}
+@font-face {
+    font-family: 'iskoola_potaregular';
+    src: url('/sites/all/themes/subomega/fonts/iskpota-webfont.eot');
+    src: url('/sites/all/themes/subomega/fonts/iskpota-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/sites/all/themes/subomega/fonts/iskpota-webfont.woff') format('woff'),
+         url('/sites/all/themes/subomega/fonts/iskpota-webfont.ttf') format('truetype'),
+         url('/sites/all/themes/subomega/fonts/iskpota-webfont.svg#iskoola_potaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,body,#page{
+  background-color: #000000;
+}
+#page > section {
+  background-color: #000000;
+  background-image: url("/sites/all/themes/subomega/images/bg.jpg");
+  background-position: center -40px;
+  background-repeat: no-repeat;
+  background-size: 960px auto;
+  min-height: 698px;
+}
+
+header .zone,
+footer .zone {
+  background: none repeat scroll 0 0 #000000;
+  color: #FFFFFF;
+}
+header {
+  min-height: 39px;
+}
+footer .region {
+  padding-top: 5px;
+}
+.front #page-title{
+display: none;
+}
+.page-participants #region-content,
+.page-participants #region-content{
+margin-left: 27px;
+margin-right: 27px;
+width: 906px;
+
+}
+#block-system-main {
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  padding: 10px;
+ width: 90%;
+}
+#region-content #page-title{
+font-size: 18px;
+font-weight: normal;
+letter-spacing: 2px;
+margin-top: 10px;
+}
+#breadcrumb {
+font-size: 12px;
+margin: 3px 27px auto;
+width: 906px !important;
+}
+#breadcrumb .breadcrumb {
+padding-bottom:0px;
+}
+a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+/*
+*
+* Main menu
+*/
+#zone-menu {
+background: none repeat scroll 0 0 rgba(0,0,0, 0.8);
+margin-auto: 0 auto;
+    line-height: 35px;
+}
+.front #zone-menu {
+background: none repeat scroll 0 0 rgba(0,0,0, 0.1);
+}
+.front #zone-menu-wrapper{
+width: 100%;
+top: 500px;
+position: absolute;
+}
+#region-menu {
+  width: 960px;
+  margin: 0px;
+}
+.not-front #zone-menu-wrapper{
+width: 100%;
+top: 110px;
+position: absolute;
+}
+.menu li a:after {
+  content: ":";
+padding-left: 6px;
+}
+  
+/*
+.menu li:not(.last) a:after 
+
+*/
+
+#block-system-main-menu .menu li a {
+    font-size: 18px;
+  
+  
+}
+
+/*
+* #block-block-1 // front
+*/
+.front #block-block-1 {
+letter-spacing: 1.1px;
+line-height: 22.6px;
+text-align: justify !important;
+margin:  0 auto;
+width: 370px;
+word-spacing: 0.0px;
+}
+.site-name a{
+color: #000000;
+font-family: "iskoola_potaregular";
+font-size: 49px;
+font-weight: normal;
+letter-spacing: 6px;
+line-height: 68px;
+word-spacing: 0px;
+padding-left: 43px;
+
+}
+.front .site-name a{
+border-bottom: 1px dotted #808080;
+border-top: 1px dotted #808080;
+margin-bottom: 16px;
+font-size: 36px;
+line-height: 53px;
+word-spacing: 3px;
+padding-left:0px;
+}
+.site-name{
+margin-top:0px;
+}
+.site-name-slogan{
+float: none;
+margin: 0 auto ;
+padding-bottom: 40px;
+}
+.front .site-name-slogan{
+width: 370px;
+padding-top: 39px;
+padding-bottom: 0px;
+
+}
+.front #block-block-1  p {
+  font-size: 14px;
+letter-spacing: 0;
+word-spacing: 2px;
+}
+/*
+ * 
+*	footer blocks
+**/
+
+#block-block-6 {
+  color: #FFFFFF;
+  position: absolute;
+  top: 672px;
+  font-size: 14px;
+  left: 7px;
+}
+#block-block-4,
+#block-block-3{
+float: right;
+font-size: 11px;
+}
+#block-system-main-menu--2,
+#block-block-2{
+float: left;
+font-size: 11px;
+}
+a#facebook{
+background: url("/sites/all/themes/subomega/images/facebook.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+display: inline-block;
+height: 19px;
+text-indent: -9900px;
+width: 18px;
+}
+/*
+*
+*	Header -- Creadits
+*/
+#block-block-5 .block-inner > .content > div:last-of-type:last-child{
+	display:none;
+}
+#block-block-5 a {
+    margin: 0 40px;
+}
+a#isf{
+background: url("/sites/all/themes/subomega/images/credit_1.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+display: inline-block;
+height: 36px;
+text-indent: -9900px;
+width: 196px;
+}
+a#wgalil{
+background: url("/sites/all/themes/subomega/images/credit_3.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+display: inline-block;
+height: 32px;
+text-indent: -9900px;
+width: 136px;
+}
+a#huji{
+background: url("/sites/all/themes/subomega/images/credit_2.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+display: inline-block;
+height: 33px;
+text-indent: -9900px;
+width: 177px;
+}
+
+
+/*
+*	view-participants 
+*/
+.float{
+float:left;
+}
+.view-participants.view-display-id-block_1{
+margin-top: 40px;
+}
+.view-participants.view-display-id-block_1 .active{
+color:white;
+background-color:black;
+}
+.view-participants.view-display-id-block_1 a, 
+.view-participants.view-display-id-block_1 .views-row {
+  display: inline-block;
+  width: 100%;
+}
+.page-participants #block-system-main {
+margin: 0 auto;
+padding-top: 20px;
+width: 80%;
+padding-left: 15px;
+padding-right: 15px;
+position: relative;
+right: -2px;
+}
+.field-name-field-image-part img {
+max-width: 140px;
+max-height: 120px;
+}
+.view-participants.view-display-id-page .views-row {
+  margin-right: 54px;
+  width: 140px;
+  min-height: 170px;
+}
+.view-participants .views-row-4 ,
+.view-participants .views-row-8 ,
+.view-participants .views-row-12 ,
+.view-participants .views-row-16 ,
+.view-participants .views-row-20 ,
+.view-participants .views-row-24 {
+  margin-right: 0px !important;
+
+}
+.views-field-field-image-part {
+  margin-bottom: 5px;
+}
+.field-name-field-image-part img ,
+.views-field-field-image-part img {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+.views-field-field-image-part img {
+  border: 1px solid #444444;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #000000;
+  height: 116px !important;
+  width: 100% !important;
+}
+.views-field-field-image-part img:hover {
+filter: none;
+-webkit-filter: none;
+transition-duration:2s;
+}
+
+
+.node-participants > header {
+  left: 180px;
+  position: absolute;
+}
+.title.node_type{
+margin-top: 0px !important;
+margin-bottom: 10px !important;
+font-size:18px;
+}
