@@ -9,6 +9,8 @@
   $node = node_load($nid);
 	if($node->type =="participants"){
 	  print '<h2 class="title node_type" id="page-title">'.$node->type.'</h2>';
+	}else {
+  	 print '<h2 class="title node_type" id="page-title">'.$node->title.'</h2>';  	 
 	}
   } else {
   	 print '<h1 class="title" id="page-title">'.$title.'</h1>';
