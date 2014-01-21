@@ -54,7 +54,11 @@ jQuery('body:not(.ie) #zone-branding').css('position','relative').append('<div i
  jQuery('body.front #overlay_site').css("background","url(/sites/all/modules/overlay_site/front.jpg)");
   jQuery('body.page-node-1 #overlay_site').css("background","url(/sites/all/modules/overlay_site/about1css.jpg )");
  jQuery('body.page-participants #overlay_site').css("background","url(/sites/all/modules/overlay_site/participants.jpg)");
- jQuery('body.page-node-188 #overlay_site').css("background","url(/sites/all/modules/overlay_site/ipad_studio.png)");
+ jQuery('body.node-type-participants #overlay_site').css({
+	 "background":"url(/sites/all/modules/overlay_site/participants2css.jpg)",
+	 "top" : "-4px"
+ });
+ 
  jQuery('body.page-node-189 #overlay_site').css("background","url(/sites/all/modules/overlay_site/ipad_contact.png)");
 
 });

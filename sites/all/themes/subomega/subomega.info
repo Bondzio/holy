@@ -4,6 +4,15 @@ core = '7.x'
 engine = 'phptemplate'
 screenshot = 'screenshot.png'
 base theme = 'omega'
+
+scripts[] = 'js/subomega.js'
+scripts[] = 'scroll/jquery.mousewheel.js'
+scripts[] = 'scroll/jquery.jscrollpane.min.js'
+
+css[jquery.jscrollpane.css][name] = 'jquery.jscrollpane.css'
+css[jquery.jscrollpane.css][description] = ''
+css[jquery.jscrollpane.css][options][weight] = '11'
+
 regions[page_top] = 'Page Top'
 regions[page_bottom] = 'Page Bottom'
 regions[content] = 'Content'
@@ -35,9 +44,14 @@ zones[postscript] = 'Postscript'
 css[global.css][name] = 'Your custom global styles'
 css[global.css][description] = 'This file holds all the globally active custom CSS of your theme.'
 css[global.css][options][weight] = '10'
+
 css[general.css][name] = 'general styles'
 css[general.css][description] = ''
 css[general.css][options][weight] = '11'
+
+css[global_text.css][name] = 'text style -- editor'
+css[global_text.css][description] = ''
+css[global_text.css][options][weight] = '11'
 
 
 settings[alpha_grid] = 'alpha_default'
