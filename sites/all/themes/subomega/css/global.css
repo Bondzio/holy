@@ -3,7 +3,9 @@
 }/* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 body {
-  background: url("/sites/all/themes/subomega/images/bgpictureoriginal.jpg") no-repeat fixed 0 0 /  cover rgba(0, 0, 0, 0);
+  background: url("/sites/all/themes/subomega/images/bgpictureoriginal.jpg") no-repeat fixed 0 0 ;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0);
   min-width: 960px;
   height: 100%;
 }

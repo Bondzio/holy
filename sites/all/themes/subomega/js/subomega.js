@@ -1,4 +1,5 @@
 jQuery(document).ready(function(){
+jQuery('[href^=http').attr("target","_blank");
 var sitename = jQuery(".front .site-name a").text().replace(/Sacred Sites in a/i, "");
 jQuery(".front .site-name a").text(sitename).prepend('<hr/>').prepend('Sacred Sites in a');
 	jQuery(".view-participants.view-display-id-block_1").prepend(jQuery('<div/>').css({

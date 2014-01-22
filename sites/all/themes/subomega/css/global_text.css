@@ -100,6 +100,17 @@ li,div {
 p {
   line-height: 21px;
 }
+
+#ckeditor-custom-id a,
+#ckeditor-custom-id a:link, 
+#ckeditor-custom-id a:visited,
+.field-name-body a,
+.field-name-body a:link, 
+.field-name-body a:visited{
+
+ color: #fc6704;
+}
+
 .list {
   font-size: 22px;
   font-weight: bold;
