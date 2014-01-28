@@ -1,7 +1,8 @@
 jQuery(document).ready(function(){
 jQuery('[href^=http]').attr("target","_blank");
-var sitename = jQuery(".front .site-name a").text().replace(/Sacred Sites in a/i, "");
-jQuery(".front .site-name a").text(sitename).prepend('<hr/>').prepend('Sacred Sites in a');
+//var sitename = jQuery(".front .site-name a").text().replace(/Sacred Sites in a/i, "");
+var sitename = jQuery(".front .site-name a").text().replace(/Sacred Sites in /i, "");
+jQuery(".front .site-name a").text(sitename).prepend('<hr/>').prepend('Sacred Sites in');
 	jQuery(".view-participants.view-display-id-block_1").prepend(jQuery('<div/>').css({
 	  "border-top": "1px dotted",
 	    "height": "2px",
