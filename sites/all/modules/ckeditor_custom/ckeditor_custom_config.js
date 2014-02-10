@@ -17,11 +17,21 @@ CKEDITOR.editorConfig = function( config ){
         // Each style is an object whose properties define how it is displayed
         // in the dropdown, as well as what it outputs as html into the editor
         // text area.
-        { name : 'list numbers'   , element : 'span', attributes : { 'class' :'list' }},
+        { 
+			name : 'list numbers'   , 
+			element : 'span', 
+			attributes : { 'class' :'list' }
+		},
         { name : 'text with right img'   , element : 'p', attributes : { 'class' :'text_with_right_img' }},
         { name : 'img with left text'    , element : 'p', attributes : { 'class' :'img_with_left_text' }},
         { name : 'img with left text2'    , element : 'p', attributes : { 'class' :'img_with_left_text' }},
         { name : 'more'   , element : 'a', attributes : { 'class' :'more_arrow' }},
+        { name : 'img border'   , element : 'img', attributes : { 'class' :'img_border' }},
+        { 
+			name : '50% white bg',
+			element : 'div', 
+			attributes : { 'class' :'white_50_percent_background' }
+			},
 
         ];
 

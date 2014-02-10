@@ -101,13 +101,16 @@ p {
   line-height: 21px;
 }
 
+.field .field-label {
+  font-size: 14.5px;
+}
 #ckeditor-custom-id a,
 #ckeditor-custom-id a:link, 
 #ckeditor-custom-id a:visited,
 .field-name-body a,
 .field-name-body a:link, 
 .field-name-body a:visited{
-
+text-decoration-color: #fc6704;
  color: #fc6704;
 }
 
@@ -128,7 +131,9 @@ float:right;
 }
 .text_with_right_img{
 width:510px;
-
+}
+.grid-10 .text_with_right_img{
+width: 380px;
 }
 .more_arrow{
     background: url("/sites/all/themes/subomega/images/arrow.png") no-repeat scroll -10px 6px rgba(0, 0, 0, 0);
@@ -142,4 +147,11 @@ width:510px;
 }
 .float{
 float:left;
+}
+.img_border{
+  border: 1px solid;
+    border-radius: 3px;
+}
+.white_50_percent_background{
+background: none repeat scroll 0 0 rgba(255, 255, 255, 0.4);
 }

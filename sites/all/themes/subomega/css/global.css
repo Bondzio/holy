@@ -1,3 +1,7 @@
+.text-format-wrapper .filter-wrapper {
+	display:none;
+}
+
 .container-12,.grid-12{
 /*min-width:1070px;*/
 }/* This file will hold styles for the mobile version of your website (mobile first). */
@@ -22,13 +26,14 @@ height:100%;
 }
 
 #page > section {
-/*  background-color: #000000;
+/*  
+background-color: #000000;
   background-image: url("/sites/all/themes/subomega/images/bg.jpg");
   background-position: center -40px;
   background-repeat: no-repeat;
   background-size: 960px auto;
 */
-  min-height: 698px;
+  min-height: /*698px*/540px;
    padding-bottom: 20px;
 }
 .not-front #page > section {
@@ -55,7 +60,7 @@ footer #region-footer-first {
 display: none;
 }
 
-
+.white-50-percent-background,
 #block-system-main {
   background: none repeat scroll 0 0 rgba(255, 255, 255, 0.4);
   border-radius: 5px;
@@ -68,7 +73,7 @@ display: none;
 overflow-x: hidden;
 overflow-y: scroll;
 }
-/* scrollbar  */
+ scrollbar  
 .jspDrag{
 	background: none repeat scroll 0 0 #808080 !important;
 }
@@ -91,13 +96,15 @@ padding-bottom:0px;
 color: #FFFFFF;
 font-size: 12px;
 letter-spacing: 0.5px;
-}
-
-	
-a:link, a:visited {
+}	
+a {
     color: inherit;
     text-decoration: none;
+}	
+#block-system-main a {
+    text-decoration: underline;
 }
+
 /*
 *
 * Main menu
@@ -117,6 +124,7 @@ width: 1000px;
 .not-front .menu [href^="java"] {
   color: #a4a1a3;
 }
+
 #block-system-main-menu {
 background: none repeat scroll 0 0 rgba(0,0,0, 0.8);
 margin-auto: 0 auto;
@@ -154,11 +162,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 top: 467px;
 position: absolute;*/
 }
+/*
 .not-front #zone-menu-wrapper{
 width: 100%;
 top: 110px;
 position: absolute;
 }
+*/
 .admin-menu.not-front:not(.page-participants) #zone-menu-wrapper{
 top:140px;
 }
@@ -287,7 +297,10 @@ margin-top:0px;
 .site-name-slogan{
 float: none;
 margin: 0 auto ;
+/*
 padding-bottom: 40px;
+*/
+width:960px;
 }
 .front .site-name-slogan{
 width: 370px;
@@ -540,33 +553,163 @@ padding-top: 25px;
 }
 
 /* aside menu - view */
-.view-participants.view-display-id-block_1 .views-row {
+
+.view-participants.view-display-id-block_1 .views-row ,
+.view-menus .views-row {
   border-bottom: 1px dotted;
   margin-right: 10px;
   padding: 5px 0;
    width: 110px;
 }
 
-.view-participants.view-display-id-block_1{
+.view-participants.view-display-id-block_1,
+.view-menus{
 margin-top: 49px;
   
 }
-.view-participants.view-display-id-block_1 > div.view-content{
+.view-participants.view-display-id-block_1 > div.view-content,
+.view-menus > div.view-content{
 border-right: 1px dotted;
 }
 .view-participants.view-display-id-block_1 .active,
-.view-participants.view-display-id-block_1 a:hover {
+.view-participants.view-display-id-block_1 a:hover ,
+.view-menus .active,
+.view-menus a:hover {
  background-color: #000000;
     color: #FFFFFF;
    
 }
+.view-menus a,
 .view-participants.view-display-id-block_1 a{
  display:block;
   line-height: 20px;
 }
+.view-menus .views-row ,
 .view-participants.view-display-id-block_1 .views-row {
   display: inline-block;
  /*  width: 100%; */
 }
 
+
+/*
+ * Sites of the project -- ## START
+ */ 
+.content > .field-name-field-location, 
+.content > .field-name-field-speical-dates,
+.location_and_dates_wrap{
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.4);
+border-radius: 5px;
+padding: 5px 10px;
+width: 90%;
+}
+.field-name-field-location div {
+  line-height: 18px;
+}
+.field-name-field-video,
+.field-name-field-field-notes{	
+	display:none;
+}
+
+.node-type-sites.video article .field-name-body,
+.node-type-sites.video article .field-name-field-field-notes,
+.node-type-sites.video article .field-name-field-images,
+.node-type-sites.video article .field-name-field-location,
+.node-type-sites.video article .field-name-field-speical-dates,
+.node-type-sites.video article .location_and_dates_wrap,
+.node-type-sites.field_notes article .field-name-body,
+.node-type-sites.field_notes article .field-name-field-speical-dates,
+.node-type-sites.field_notes article .field-name-field-location,
+.node-type-sites.field_notes article  .location_and_dates_wrap{
+	display: none;
+	padding:0px;
+}
+.field-name-body,
+.node-type-sites.field_notes article .field-name-field-field-notes,
+.node-type-sites.video article .field-name-field-video{
+	display: block;
+}
+
+
+.node-type-sites.field_notes #block-system-main{
+	background: url("/sites/all/themes/subomega/images/bg-sites-of-projects-field-note.jpg") repeat-y scroll right 0 rgba(0, 0, 0, 0);
+	background-size: cover;
+}
+.node-type-sites .buttons div{
+	width:64px;
+	height:58px;
+	display: inline-block;
+}
+.node-type-sites .buttons #video{
+	background-image: url("/sites/all/themes/subomega/images/video_but.png");
+}
+.node-type-sites.video .buttons #video,
+.node-type-sites .buttons #video:hover{
+	background-image: url('/sites/all/themes/subomega/images/video_but_hover.png');
+}
+.node-type-sites .buttons #field_notes{
+	background-image: url('/sites/all/themes/subomega/images/fildnotesbut.png');
+}
+.node-type-sites.field_notes .buttons #field_notes,
+.node-type-sites .buttons #field_notes:hover{
+	background-image: url('/sites/all/themes/subomega/images/fildnotesbut_hover.png');
+}
+ /* 
+ * field-name-field-gallery
+ * */
+.field-name-field-images{
+position:relative;
+}
+.field-name-field-images .field-items{
+  border-radius: 5px;
+  border:1px solid black;
+}
+.field-name-field-images .field-item { 
+    width: 100%;
+}
+.field-name-field-images img {
+    height: auto;
+    width: 100%;
+}
+div#controls {
+  display: none;
+position: absolute;
+top: 50%;
+width: 100%;
+z-index: 900;
+}
+.field-name-field-images:hover #controls {
+  display: block;
+}
+div#controls #last ,
+div#controls #prev {
+	  float: right;
+ }
+div#controls #next {
+ background: url("/sites/all/themes/subomega/images/arrow_left.png") no-repeat scroll right 0 rgba(0, 0, 0, 0);
+cursor: pointer;
+float: right;
+height: 52px;
+text-indent: -9999px;
+width: 31px;
+}
+div#controls #prev {
+  background: url("/sites/all/themes/subomega/images/arrow_right.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);
+
+  cursor: pointer;
+float: right;
+height: 52px;
+text-indent: -9999px;
+width: 31px;
+}
+div#controls #first ,
+div#controls #next {
+  float: left;
+}
+/*links*/
+#node-page-42 a {
+  color: black;
+}
+#node-page-42 a:hover {
+  color: #fd620e;
+}
 
