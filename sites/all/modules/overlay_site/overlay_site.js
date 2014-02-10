@@ -59,6 +59,6 @@ jQuery('body:not(.ie) #zone-branding').css('position','relative').append('<div i
 	 "top" : "-4px"
  });
  
- jQuery('body.page-node-189 #overlay_site').css("background","url(/sites/all/modules/overlay_site/ipad_contact.png)");
+ jQuery('body.node-type-sites #overlay_site').css("background","url(/sites/all/modules/overlay_site/siteoftheprojects-fildsnote.jpg)");
 
 });

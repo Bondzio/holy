@@ -18,9 +18,10 @@ function subomega_page_alter(&$vars) {
 			$vars["footer"]["footer"]["footer_first"]["footer_main-menu"] = $vars["header"]["menu"]["menu"]["system_main-menu"];
 			$vars["footer"]["footer"]["footer_first"]["footer_main-menu"]['#weight'] = 100;
 			if(drupal_is_front_page()){
-				$vars["content"][] = $vars["header"]["menu"];
-				$vars["content"]["menu"]["system_main-menu"]['#weight'] = 100;
+				$vars["content"]["menu"] = $vars["header"]["menu"];
+				//$vars["content"]["menu"]["system_main-menu"]['#weight'] = 100;
 				unset($vars["header"]["menu"]["menu"]["system_main-menu"]);
+				unset($vars["content"]["menu"]["menu"]["block_6"]);
 			}	
 		}    
 	}
@@ -92,7 +93,7 @@ function subomega_preprocess_node(&$variables){
 	if( $variables["type"] == "sites" && isset($variables["field_background"]) ){
 		hide($variables["content"]["field_background"]);
 		$image = file_create_url($variables["field_background"][0]['uri']);
-		drupal_add_css('#section-content{background-size:cover;background-image: url('.$image.') !important;}', "inline");
+		drupal_add_css('#section-content{background-image: url('.$image.') !important;}', "inline");
 		
 	}
 }

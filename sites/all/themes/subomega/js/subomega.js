@@ -28,7 +28,7 @@ var node_type_sites = jQuery(".node-type-sites");
 if(node_type_sites.length ){
 		
 	/* field notes & videos*/ 	
-	var buttons = jQuery('<div class="buttons"><div id="video"></div><div id="field_notes"></div></div>');
+	var buttons = jQuery('<div class="buttons"><div id="field_notes"></div><div id="video"></div></div>');
 	jQuery('#field_notes', buttons).bind("click", function(e){				
 		jQuery('body').removeClass("video").toggleClass("field_notes");		
 		Drupal.avishay.scroll("article");
@@ -58,18 +58,21 @@ if(node_type_sites.length ){
 					// rev : true,
 					 nowrap: 1,
 					   //before: onAfter,
-					   //after: Drupal.avishay.fixSlideshow(dialog), 
-	//					   function(){
-	//					   var h = jQuery("div.field-items img:visible", dialog).height();
-	//					   jQuery(".field-type-image .field-items", dialog).height(h);
-	//					   .css("max-height", h+'px');
-	//					   console.log("after");
-	//				   },
+					   after: 
+//						   Drupal.avishay.fixSlideshow(dialog), 
+						   function(){
+						   var h = jQuery(" img:visible", dialog).height();
+						   jQuery(".field-items", dialog).animate({"height":h},"fast");
+						 //  .css("max-height", h+'px');
+						   console.log("after");
+					   },
 					   slideResize: 1,
 					   containerResize: 1
 					   
 				});
 }
+jQuery(".page-node-36").addClass("node-type-sites");
+
 /* 
  * sites of project -- ## END
  * */	
