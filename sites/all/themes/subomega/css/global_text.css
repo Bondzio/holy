@@ -155,3 +155,24 @@ float:left;
 .white_50_percent_background{
 background: none repeat scroll 0 0 rgba(255, 255, 255, 0.4);
 }
+
+.arrow_small{
+background-image: url("/sites/all/themes/subomega/images/arrow_small.png");
+background-position: right center;
+background-repeat: no-repeat;
+padding-right: 19px;
+padding-bottom: 3px;
+}
+
+
+.bullet{
+background-image: url("/sites/all/themes/subomega/images/bullet.png");
+background-position: left center;
+background-repeat: no-repeat;
+padding-left: 13px;
+}
+.bullet:hover {
+  background-image: url("/sites/all/themes/subomega/images/bullet_on.png");
+}
+
+
