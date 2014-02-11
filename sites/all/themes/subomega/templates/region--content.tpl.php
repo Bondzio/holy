@@ -6,9 +6,9 @@
 		  // Get the nid
 		  $nid = arg(1);		
 		  $node = node_load($nid);
-			if($node->type =="participants"){
-			  print '<h2 class="title node_type" id="page-title">'.$node->type.'</h2>';
-			}else {
+			if($node->type =="participants" || $node->type == "lectures_publications" || $node->type == "news"){
+			  print '<h2 class="title node_type" id="page-title">'.node_type_get_name($node).'</h2>';
+			} else {
 		  	 print '<h2 class="title node_type" id="page-title">'.$node->title.'</h2>';  	 
 			}
 		  } else {

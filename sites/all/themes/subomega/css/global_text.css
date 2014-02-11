@@ -94,7 +94,7 @@ h2 {
   font-weight: normal;
 }
 li,div {
-  font-size: 14px;
+  font-size: /*14px*/14.5px;
   line-height: 16px;
 }
 p {

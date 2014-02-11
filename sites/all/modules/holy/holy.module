@@ -1,0 +1,4 @@
+<?php
+function holy_form_alter(&$form, &$form_state, $form_id){
+	$x=0;	
+}

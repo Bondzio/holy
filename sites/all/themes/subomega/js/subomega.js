@@ -12,15 +12,23 @@ jQuery(".front .site-name a").text(sitename).prepend('<hr/>').prepend('Sacred Si
 	  "border-top": "1px dotted",
 	    "height": "2px",
 	    "width": "90%"}));
-	jQuery(".field-name-body .field-item ").jScrollPane();
 	
-	if(jQuery(".page-participants").length){
-		if(jQuery("#block-system-main").height() > 680){
-			var h =jQuery("#block-system-main").width();
-			jQuery("#block-system-main").width(h+20).height(680).jScrollPane();
+	if(jQuery(".node-type-participants").length){
+		var height = jQuery(".field-name-body .field-item ");	
+			height.jScrollPane();
+	
+	} else {
+	
+	//if(jQuery(".page-participants").length){
+		var max_height = 500;
+		var elm = jQuery(".field-name-body .field-item ");
+		if(elm.height() > max_height ){
+			var h = elm.width();
+			elm.height(max_height ).jScrollPane();
 
 		}
-	}
+	//}
+	}	
 /* 
  * sites of project -- ## start
  * */
