@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+ .filter-wrapper.form-wrapper{
+	display: none;
+}
+label,
+.fieldset-legend {
+	/* background: red; */
+	font-size: 20px;
+	
+	/* border-top:1px dotted gray; */
+	padding:5px !important;
+}
+[for="edit-field-images-und-0"],
+.vertical-tabs label {
+	background :none;
+	font-size: inherit;
+	border-top:0px dotted gray;
+	padding:0px;
+}
+#edit-field-background {
+float: right;
+border: 1px solid #ccc;
+margin-bottom:20px;
+}
+#edit-field-images-und {
+width: 100%;
+}
