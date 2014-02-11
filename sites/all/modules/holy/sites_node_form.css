@@ -1,7 +1,5 @@
 @CHARSET "UTF-8";
- .filter-wrapper.form-wrapper{
-	display: none;
-}
+ 
 label,
 .fieldset-legend {
 	/* background: red; */

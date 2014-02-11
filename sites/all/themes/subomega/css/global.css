@@ -1,7 +1,6 @@
-.text-format-wrapper .filter-wrapper {
-	display:none;
+a.contextual-links-trigger {
+background: transparent url(../images/gear-select.png) no-repeat 2px 0 ;
 }
-
 .container-12,.grid-12{
 /*min-width:1070px;*/
 }/* This file will hold styles for the mobile version of your website (mobile first). */
@@ -795,8 +794,9 @@ top: 50%;
 width: 100%;
 z-index: 900;
 }
+#slides:hover #controls ,
 .field-name-field-images:hover #controls {
-  display: block;
+  display: block !important;
 }
 div#controls #last ,
 div#controls #prev {
@@ -822,6 +822,23 @@ width: 31px;
 div#controls #first ,
 div#controls #next {
   float: left;
+}
+/*main sites page slideshow*/
+#slides{
+  border-radius: 5px;
+  border:1px solid black;
+}
+#slides img {
+    height: auto;
+    width: 100%;
+}
+
+.page-node-36 #block-views-sites-of-project-block{
+	background:none repeat scroll 0 0 rgba(255, 255, 255, 0.6);
+	border-radius: 5px 5px 0 0;
+}
+.page-node-36 #block-system-main{
+	border-radius: 0 0 5px 5px ;
 }
 /*links*/
 #node-page-42 a {

@@ -56,31 +56,56 @@ if(node_type_sites.length ){
 	/* sites of project - slideshow */ 
 	var dialog = jQuery("article .field-name-field-images ");
 	jQuery(dialog).append(jQuery('<div id="nav"></div>')).prepend(jQuery('<div id="controls"><div id="next">next</div><div id="prev">prev</div></div>'));
-				jQuery(" .field-items", dialog).cycle({
-					fx : 'scrollHorz',
-					//pagerAnchorBuilder : pagerFactory,
-					prev: '#next',
-					next: '#prev', 
-					//pager : '#nav',
-					//timeout : 0,
-					// rev : true,
-					 nowrap: 1,
-					   //before: onAfter,
-					   after: 
+	jQuery(" .field-items", dialog).cycle({
+		fx : 'scrollHorz',
+		//pagerAnchorBuilder : pagerFactory,
+		prev: '#next',
+		next: '#prev', 
+		//pager : '#nav',
+		//timeout : 0,
+		// rev : true,
+		 nowrap: 1,
+		   //before: onAfter,
+		   after: 
 //						   Drupal.avishay.fixSlideshow(dialog), 
-						   function(){
-						   var h = jQuery(" img:visible", dialog).height();
-						   jQuery(".field-items", dialog).animate({"height":h},"fast");
-						 //  .css("max-height", h+'px');
-						   console.log("after");
-					   },
-					   slideResize: 1,
-					   containerResize: 1
-					   
-				});
+			   function(){
+			   var h = jQuery(" img:visible", dialog).height();
+			   jQuery(".field-items", dialog).animate({"height":h},"fast");
+			 //  .css("max-height", h+'px');
+			   console.log("after");
+		   },
+		   slideResize: 1,
+		   containerResize: 1
+		   
+	});
 }
 jQuery(".page-node-36").addClass("node-type-sites");
-
+jQuery(".view-sites-of-project").prepend('<div id="slides"><div id="slides_wrap"></div></div>');
+jQuery("#slides_wrap").append(jQuery(".view-sites-of-project img"));
+jQuery(".view-sites-of-project .view-content").remove();
+jQuery("#slides").append(jQuery('<div id="nav"></div>')).prepend(jQuery('<div id="controls"><div id="next">next</div><div id="prev">prev</div></div>'));
+jQuery("#slides_wrap").cycle({
+	fx : 'scrollHorz',
+	//pagerAnchorBuilder : pagerFactory,
+	prev: '#next',
+	next: '#prev', 
+	//pager : '#nav',
+	//timeout : 0,
+	// rev : true,
+	 nowrap: 1,
+	   //before: onAfter,
+	   after: 
+//					   Drupal.avishay.fixSlideshow(dialog), 
+		   function(){
+		   var h = jQuery(" img:visible", dialog).height();
+		   jQuery("#slides").animate({"height":h},"fast");
+		 //  .css("max-height", h+'px');
+	
+	   },
+	   slideResize: 1,
+	   containerResize: 1
+	   
+});
 /* 
  * sites of project -- ## END
  * */	
