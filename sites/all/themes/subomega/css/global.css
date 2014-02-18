@@ -271,7 +271,7 @@ padding-left:0px;*/
 }
 .site-name hr {
 background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-border-top: 2px dotted ;
+border-top: 2px dotted #808080 ;
 display: inline-block;
 margin-bottom: 12px;
 margin-top: 0;
