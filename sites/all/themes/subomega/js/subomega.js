@@ -4,14 +4,14 @@ Drupal.avishay.isMSIE = /*@cc_on!@*/0;
 
 
 jQuery(document).ready(function(){
-jQuery('[href^=http]').attr("target","_blank");
-//var sitename = jQuery(".front .site-name a").text().replace(/Sacred Sites in a/i, "");
-var sitename = jQuery(".front .site-name a").text().replace(/Sacred Sites in /i, "");
-jQuery(".front .site-name a").text(sitename).prepend('<hr/>').prepend('Sacred Sites in');
-	jQuery(".view-participants.view-display-id-block_1").prepend(jQuery('<div/>').css({
+	jQuery('[href^=http]').attr("target","_blank");
+	//var sitename = jQuery(".front .site-name a").text().replace(/Sacred Sites in a/i, "");
+	var sitename = jQuery(".front .site-name a").text().replace(/Sacred Sites in /i, "");
+	jQuery(".front .site-name a").text(sitename).prepend('<hr/>').prepend('Sacred Sites in');
+	/*jQuery(".view-participants.view-display-id-block_1").prepend(jQuery('<div/>').css({
 	  "border-top": "1px dotted",
 	    "height": "2px",
-	    "width": "90%"}));
+	    "width": "90%"}));*/
 	
 	if(jQuery(".node-type-participants").length){
 		var height = jQuery(".field-name-body .field-item ");	
@@ -36,7 +36,7 @@ var node_type_sites = jQuery(".node-type-sites");
 if(node_type_sites.length ){
 		
 	/* field notes & videos*/ 	
-	var buttons = jQuery('<div class="buttons"><div id="field_notes"></div><div id="video"></div></div>');
+	var buttons = jQuery('<div class="buttons"><div id="field_notes">Fieldnotes</div><div id="video">Video</div></div>');
 	jQuery('#field_notes', buttons).bind("click", function(e){				
 		jQuery('body').removeClass("video").toggleClass("field_notes");		
 		Drupal.avishay.scroll("article");
@@ -79,11 +79,14 @@ if(node_type_sites.length ){
 		   
 	});
 }
+
 jQuery(".page-node-36").addClass("node-type-sites");
 jQuery(".view-sites-of-project").prepend('<div id="slides"><div id="slides_wrap"></div></div>');
 jQuery("#slides_wrap").append(jQuery(".view-sites-of-project img"));
 jQuery(".view-sites-of-project .view-content").remove();
 jQuery("#slides").append(jQuery('<div id="nav"></div>')).prepend(jQuery('<div id="controls"><div id="next">next</div><div id="prev">prev</div></div>'));
+
+if(jQuery(".node-type-sites").length){
 jQuery("#slides_wrap").cycle({
 	fx : 'scrollHorz',
 	//pagerAnchorBuilder : pagerFactory,
@@ -106,6 +109,7 @@ jQuery("#slides_wrap").cycle({
 	   containerResize: 1
 	   
 });
+}
 /* 
  * sites of project -- ## END
  * */	

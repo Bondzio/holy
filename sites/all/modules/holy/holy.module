@@ -10,3 +10,6 @@ function holy_form_alter(&$form, &$form_state, $form_id){
 	$form['#attached']['css'][] = drupal_get_path("module", "holy").'/node_form.css';
 	//		drupal_set_message(drupal_get_path("module", "holy").'/sites_node_form.css');
 }
+function holy_node_update($node){
+    variable_set("last_modified", date('d/m/Y'));
+}

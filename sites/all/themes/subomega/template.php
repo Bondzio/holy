@@ -111,3 +111,13 @@ function subomega_preprocess_html(&$vars) {
 	// Add header meta tag for IE to head
 	drupal_add_html_head($meta_ie_render_engine, 'meta_ie_render_engine');
 }
+function subomega_preprocess_field(&$variables, $hook) {
+	$element = $variables['element'];
+	if (isset($variables['element']['#field_name'])) {
+		if ($variables['element']['#field_name'] == 'field_email') {
+			foreach ($variables['element']["#items"] as $key => $value) {
+				$variables["items"][$key]["#markup"] = '<a href="mailto:'.$value["value"].'">'.$value["value"].'</a>';
+			}
+		}
+	}
+}

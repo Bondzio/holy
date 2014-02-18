@@ -119,11 +119,6 @@ text-decoration-color: #fc6704;
   font-weight: bold;
 padding-right:10px
 }
-#region-content #page-title{
-font-size: 18px;
-font-weight: normal;
-letter-spacing: 2px;
-}
 
 /* ckeditor_custom module styles */
 .img_with_left_text{
