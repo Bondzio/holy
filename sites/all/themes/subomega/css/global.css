@@ -827,6 +827,7 @@ div#controls #next {
 #slides{
   border-radius: 5px;
   border:1px solid black;
+ position: relative;
 }
 #slides img {
     height: auto;
