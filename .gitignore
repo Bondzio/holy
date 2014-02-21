@@ -9,6 +9,8 @@ cache/
 #files/
 #sites/*/files
 sites/*/private
+sites/default/files/css
+sites/default/files/js
 
 # Ignore default text files
 robots.txt
