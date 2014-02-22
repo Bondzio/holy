@@ -165,9 +165,7 @@ background-image: url("/sites/all/themes/subomega/images/bullet.png");
 background-position: left center;
 background-repeat: no-repeat;
 padding-left: 13px;
-}
-.bullet:hover {
-  background-image: url("/sites/all/themes/subomega/images/bullet_on.png");
+
 }
 
 

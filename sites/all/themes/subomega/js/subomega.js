@@ -22,7 +22,7 @@ jQuery(document).ready(function(){
 	//if(jQuery(".page-participants").length){
 		var max_height = 500;
 		var elm = jQuery(".field-name-body .field-item ");
-		if(elm.height() > max_height ){
+		if(elm.height() > max_height && !jQuery(elm).parents("#overlay").length){
 			var h = elm.width();
 			elm.height(max_height ).jScrollPane();
 

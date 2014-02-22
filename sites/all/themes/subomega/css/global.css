@@ -1,6 +1,9 @@
 a.contextual-links-trigger {
 background: transparent url(../images/gear-select.png) no-repeat 2px 0 ;
 }
+.contextual-links-region-active {
+    outline: 1px dashed #f00;
+}
 .container-12,.grid-12{
 /*min-width:1070px;*/
 }/* This file will hold styles for the mobile version of your website (mobile first). */
@@ -909,6 +912,12 @@ div#controls #next {
 }
 #node-page-42 a:hover {
   color: #fd620e;
+  background-image: url("/sites/all/themes/subomega/images/bullet_on.png");
+}
+
+
+
+
 }
 /*heb*/
  .page-node-51  .jspVerticalBar{

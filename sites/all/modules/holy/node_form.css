@@ -1,3 +1,7 @@
 .filter-wrapper.form-wrapper{
 	display: none;
 }
+label, .fieldset-legend {
+    font-size: 20px;
+    padding: 5px !important;
+}
