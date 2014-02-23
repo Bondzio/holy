@@ -15,3 +15,9 @@ function holy_form_alter(&$form, &$form_state, $form_id){
 function holy_node_update($node){
     variable_set("last_modified", date('d/m/Y'));
 }
+function holy_user_insert(&$edit, $account, $category) {
+	$role_name = 'editor'; // The name of the role to add.
+	if ($role = user_role_load_by_name($role_name)) {
+	 user_multiple_role_edit(array($account->uid), 'add_role', $role->rid);
+	}
+}
