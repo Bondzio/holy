@@ -26,6 +26,8 @@ CKEDITOR.editorConfig = function( config ){
         { name : 'img with left text'    , element : 'p', attributes : { 'class' :'img_with_left_text' }},
         { name : 'more'   , element : 'a', attributes : { 'class' :'more_arrow' }},
         { name : 'img border'   , element : 'img', attributes : { 'class' :'img_border' }},
+        { name : 'bullet'   , element : 'span', attributes : { 'class' :'bullet' }},
+
         { 
 			name : '50% white bg',
 			element : 'div', 
@@ -35,12 +37,7 @@ CKEDITOR.editorConfig = function( config ){
 			name : 'arrow small',
 			element : 'a', 
 			attributes : { 'class' :'arrow_small' }
-		},
-        { 
-			name : 'bullet',
-			element : 'a', 
-			attributes : { 'class' :'bullet' }
-		},
+		}
 
         ];
 
