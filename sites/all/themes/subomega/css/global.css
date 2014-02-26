@@ -920,12 +920,16 @@ div#controls #next {
 
 }
 /*heb*/
+ .page-node-69  .jspVerticalBar,
  .page-node-51  .jspVerticalBar{
  right:auto;
  left:0px;
  }
+ .page-node-69 #section-content  *  ,
  .page-node-51 #section-content  *  {
   direction: rtl !important;
+right: auto;
+left:0px;
 }
 
 /*
